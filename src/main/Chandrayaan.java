@@ -27,6 +27,7 @@ public class Chandrayaan {
                 case 'f':
                     moveForward();
                     break;
+                    
                 default:
                     System.out.println("Invalid command: " + command);
                     break;

@@ -27,4 +27,12 @@ public class ChandrayaanTest {
         assertEquals(ans, vikram.finalDestination(seriesOfCommands));
     }
 
+    @Test
+     public void givingOneArgumentForRight()
+    {
+        char[] seriesOfCommands = new char[] { 'r' };
+        String ans = "000E";
+        assertEquals(ans, vikram.finalDestination(seriesOfCommands));
+    }
+
 }
