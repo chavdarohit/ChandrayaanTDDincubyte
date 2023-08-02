@@ -20,8 +20,8 @@ public class Chandrayaan {
         direction = intialPostion;
     }
 
-    public void finalDestination() {
-        
+    public void finalDestination(char[] seriesOfCommands) {
+        System.out.println("Commands receieved succesfully");
     }
 
 }
