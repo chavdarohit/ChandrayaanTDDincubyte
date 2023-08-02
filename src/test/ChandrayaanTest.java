@@ -35,4 +35,12 @@ public class ChandrayaanTest {
         assertEquals(ans, vikram.finalDestination(seriesOfCommands));
     }
 
+     @Test
+     public void givingOneArgumentForUp()
+    {
+        char[] seriesOfCommands = new char[] { 'U' };
+        String ans = "000U";
+        assertEquals(ans, vikram.finalDestination(seriesOfCommands));
+    }
+
 }
