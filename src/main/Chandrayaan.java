@@ -20,8 +20,46 @@ public class Chandrayaan {
         direction = intialPostion;
     }
 
-    public int finalDestination(char[] seriesOfCommands) {
-         return -1;
+    public String finalDestination(char[] seriesOfCommands) {
+        String finalans = "";
+        for (char command : seriesOfCommands) {
+            switch (command) {
+                case 'f':
+                    moveForward();
+                    break;
+                default:
+                    System.out.println("Invalid command: " + command);
+                    break;
+            }
+        }
+        return finalans = Integer.toString(xDirect) +
+        Integer.toString(yDirect) +
+        Integer.toString(zDirect) +
+        Character.toString(direction);
+
+
     }
 
+    public void moveForward() {
+        switch (direction) {
+            case 'N':
+                yDirect += 1;
+                break;
+            case 'E':
+                xDirect += 1;
+                break;
+            case 'U':
+                zDirect += 1;
+                break;
+            case 'S':
+                yDirect -= 1;
+                break;
+            case 'W':
+                xDirect -= 1;
+                break;
+            case 'D':
+                zDirect -= 1;
+                break;
+        }
+    }
 }

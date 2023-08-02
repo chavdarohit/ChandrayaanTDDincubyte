@@ -23,7 +23,7 @@ public class ChandrayaanTest {
      public void givingOneArgumentForForward()
     {
         char[] seriesOfCommands = new char[] { 'f' };
-        String ans = "1";
+        String ans = "010N";
         assertEquals(ans, vikram.finalDestination(seriesOfCommands));
     }
 
