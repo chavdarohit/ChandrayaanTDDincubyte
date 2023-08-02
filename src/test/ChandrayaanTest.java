@@ -8,15 +8,12 @@ import src.main.Chandrayaan;
 
 public class ChandrayaanTest {
 
-    @Test
-    public void initiateIgnition() {
-        Chandrayaan vikram = new Chandrayaan();
-        vikram.finalDestination();
-    }
+   Chandrayaan vikram = new Chandrayaan(0, 0, 0, 'N');
 
     @Test
     public void intialPostion() {
         Chandrayaan vikram = new Chandrayaan(0, 0, 0, 'N');
     }
+    
 
 }
