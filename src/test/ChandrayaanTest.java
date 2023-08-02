@@ -45,4 +45,11 @@ public class ChandrayaanTest {
         assertEquals(ans, vikram.finalDestination(seriesOfCommands));
     }
 
+    @Test
+    public void givingOneArgumentForLeft() {
+        char[] seriesOfCommands = new char[] { 'l' };
+        String ans = "000W";
+        assertEquals(ans, vikram.finalDestination(seriesOfCommands));
+    }
+
 }
