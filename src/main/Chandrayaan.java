@@ -13,15 +13,15 @@ public class Chandrayaan {
         this.direction = ' ';
     }
 
-    public Chandrayaan(int x, int y, int z, char intialPostion) {
-        this.xDirect = x;
-        this.yDirect = y;
-        this.zDirect = z;
+    public Chandrayaan(int xDirect, int yDirect, int zDirect, char intialPostion) {
+        this.xDirect = xDirect;
+        this.yDirect = yDirect;
+        this.zDirect = zDirect;
         direction = intialPostion;
     }
 
-    public void finalDestination() {
-        
+    public int finalDestination(char[] seriesOfCommands) {
+         return -1;
     }
 
 }
