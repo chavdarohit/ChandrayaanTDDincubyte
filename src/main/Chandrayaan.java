@@ -39,6 +39,9 @@ public class Chandrayaan {
                 case 'b':
                     moveBackward();
                     break;
+                case 'd':
+                    turnDown();
+                    break;
 
                 default:
                     System.out.println("Invalid command: " + command);
@@ -50,6 +53,27 @@ public class Chandrayaan {
                 Integer.toString(zDirect) +
                 Character.toString(direction);
 
+    }
+
+    private void turnDown() {
+        switch (direction) {
+            case 'N':
+                direction = 'D';
+                break;
+            case 'E':
+                direction = 'D';
+                break;
+            case 'U':
+                break;
+            case 'S':
+                direction = 'U';
+                break;
+            case 'W':
+                direction = 'D';
+                break;
+            case 'D':
+                break;
+        }
     }
 
     private void turnLeft() {
