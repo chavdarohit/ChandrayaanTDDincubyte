@@ -33,6 +33,9 @@ public class Chandrayaan {
                 case 'u':
                     turnUp();
                     break;
+                case 'l':
+                    turnLeft();
+                    break;
                 case 'b':
                     moveBackward();
                     break;
@@ -47,6 +50,29 @@ public class Chandrayaan {
                 Integer.toString(zDirect) +
                 Character.toString(direction);
 
+    }
+
+    private void turnLeft() {
+        switch (direction) {
+            case 'N':
+                direction = 'W';
+                break;
+            case 'E':
+                direction = 'N';
+                break;
+            case 'U':
+                direction = 'W';
+                break;
+            case 'S':
+                direction = 'E';
+                break;
+            case 'W':
+                direction = 'S';
+                break;
+            case 'D':
+                direction = 'W';
+                break;
+        }
     }
 
     private void moveBackward() {
