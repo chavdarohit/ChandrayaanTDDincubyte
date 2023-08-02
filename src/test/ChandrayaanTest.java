@@ -12,13 +12,15 @@ public class ChandrayaanTest {
 
     Chandrayaan vikram = new Chandrayaan(0, 0, 0, 'N');
 
+
     @Test
     public void intialPostion() {
         Chandrayaan vikram = new Chandrayaan(0, 0, 0, 'N');
     }
 
 
-    @Test public void givingOneArgumentForForward()
+    @Test
+     public void givingOneArgumentForForward()
     {
         char[] seriesOfCommands = new char[] { 'f' };
         String ans = "1";
