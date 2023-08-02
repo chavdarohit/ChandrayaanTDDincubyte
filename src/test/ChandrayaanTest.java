@@ -15,11 +15,8 @@ public class ChandrayaanTest {
     }
 
     @Test
-    public void intialPostion()
-    {
-        Chandrayaan vikram = new Chandrayaan(0,0,0,'N');
+    public void intialPostion() {
+        Chandrayaan vikram = new Chandrayaan(0, 0, 0, 'N');
     }
-
-
 
 }
