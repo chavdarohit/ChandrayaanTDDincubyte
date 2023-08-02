@@ -30,6 +30,9 @@ public class Chandrayaan {
                 case 'r':
                     turnRight();
                     break;
+                case 'u':
+                    turnUp();
+                    break;
                 default:
                     System.out.println("Invalid command: " + command);
                     break;
@@ -41,7 +44,29 @@ public class Chandrayaan {
                 Character.toString(direction);
 
     }
-        private void turnRight() {
+
+    private void turnUp() {
+        switch (direction) {
+            case 'N':
+                direction = 'U';
+                break;
+            case 'E':
+                direction = 'U';
+                break;
+            case 'U':
+                break;
+            case 'S':
+                direction = 'D';
+                break;
+            case 'W':
+                direction = 'U';
+                break;
+            case 'D':
+                break;
+        }
+    }
+
+    private void turnRight() {
         switch (direction) {
             case 'N':
                 direction = 'E';
