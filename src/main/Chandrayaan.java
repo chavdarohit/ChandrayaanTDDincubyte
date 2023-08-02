@@ -48,10 +48,10 @@ public class Chandrayaan {
                     break;
             }
         }
-        return finalans = Integer.toString(xDirect) +
-                Integer.toString(yDirect) +
-                Integer.toString(zDirect) +
-                Character.toString(direction);
+        return finalans ="X="+Integer.toString(xDirect) +" "+
+                "Y="+Integer.toString(yDirect) +" "+
+                "Z="+Integer.toString(zDirect) +" "+
+                "Direction="+Character.toString(direction);
 
     }
 

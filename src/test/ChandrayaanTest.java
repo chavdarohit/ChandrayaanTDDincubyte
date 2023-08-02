@@ -20,42 +20,49 @@ public class ChandrayaanTest {
     @Test
     public void givingOneArgumentForForward() {
         char[] seriesOfCommands = new char[] { 'f' };
-        String ans = "010N";
+        String ans = "X=0 Y=1 Z=0 Direction=N";
         assertEquals(ans, vikram.finalDestination(seriesOfCommands));
     }
 
     @Test
     public void givingOneArgumentForRight() {
         char[] seriesOfCommands = new char[] { 'r' };
-        String ans = "000E";
+        String ans = "X=0 Y=0 Z=0 Direction=E";
         assertEquals(ans, vikram.finalDestination(seriesOfCommands));
     }
 
     @Test
     public void givingOneArgumentForUp() {
         char[] seriesOfCommands = new char[] { 'u' };
-        String ans = "000U";
+        String ans = "X=0 Y=0 Z=0 Direction=U";
         assertEquals(ans, vikram.finalDestination(seriesOfCommands));
     }
 
     @Test
     public void givingOneArgumentForBackword() {
         char[] seriesOfCommands = new char[] { 'b' };
-        String ans = "0-10N";
+        String ans = "X=0 Y=-1 Z=0 Direction=N";
         assertEquals(ans, vikram.finalDestination(seriesOfCommands));
     }
 
     @Test
     public void givingOneArgumentForLeft() {
         char[] seriesOfCommands = new char[] { 'l' };
-        String ans = "000W";
+        String ans = "X=0 Y=0 Z=0 Direction=W";
         assertEquals(ans, vikram.finalDestination(seriesOfCommands));
     }
 
     @Test
     public void givingOneArgumentForDown() {
         char[] seriesOfCommands = new char[] { 'd' };
-        String ans = "000D";
+        String ans = "X=0 Y=0 Z=0 Direction=D";
+        assertEquals(ans, vikram.finalDestination(seriesOfCommands));
+    }
+
+    @Test
+    public void givingSetOfCommands() {
+        char[] seriesOfCommands = new char[] { 'f', 'r', 'u', 'b', 'l' };
+        String ans = "X=0 Y=1 Z=-1 Direction=W";
         assertEquals(ans, vikram.finalDestination(seriesOfCommands));
     }
 
