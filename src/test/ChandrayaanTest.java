@@ -8,8 +8,6 @@ import src.main.Chandrayaan;
 
 public class ChandrayaanTest {
 
-    
-    
     @Test
     public void initiateIgnition() {
         Chandrayaan vikram = new Chandrayaan();
