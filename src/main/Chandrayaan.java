@@ -33,6 +33,7 @@ public class Chandrayaan {
                 case 'u':
                     turnUp();
                     break;
+
                 default:
                     System.out.println("Invalid command: " + command);
                     break;
