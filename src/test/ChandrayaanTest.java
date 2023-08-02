@@ -14,4 +14,12 @@ public class ChandrayaanTest {
         vikram.finalDestination();
     }
 
+    @Test
+    public void intialPostion()
+    {
+        Chandrayaan vikram = new Chandrayaan(0,0,0,'N');
+    }
+
+
+
 }
