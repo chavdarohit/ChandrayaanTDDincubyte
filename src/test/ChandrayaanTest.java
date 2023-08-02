@@ -16,4 +16,10 @@ public class ChandrayaanTest {
     }
     
 
+    @Test
+    public void givingSetOfCommands()
+    {
+        char[] commands= new char[]{'f', 'r', 'u', 'b', 'l'};
+        vikram.finalDestination(commands);
+    }
 }
