@@ -2,8 +2,10 @@ package src.main;
 
 public class Chandrayaan {
 
-    private int xDirect, yDirect, zDirect;
-    private char direction;
+    public int xDirect;
+    public int yDirect;
+    public int zDirect;
+    public char direction;
 
     public Chandrayaan() {
 
@@ -20,8 +22,10 @@ public class Chandrayaan {
         direction = intialPostion;
     }
 
-    public String finalDestination(char[] seriesOfCommands) {
-        String finalans = "";
+
+
+    public Chandrayaan finalDestination(char[] seriesOfCommands) {
+
         for (char command : seriesOfCommands) {
             switch (command) {
                 case 'f':
@@ -48,11 +52,9 @@ public class Chandrayaan {
                     break;
             }
         }
-        return finalans ="X="+Integer.toString(xDirect) +" "+
-                "Y="+Integer.toString(yDirect) +" "+
-                "Z="+Integer.toString(zDirect) +" "+
-                "Direction="+Character.toString(direction);
 
+        //returning new object for comparing
+        return new Chandrayaan(xDirect, yDirect, zDirect, direction);
     }
 
     private void turnDown() {
